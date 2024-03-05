@@ -1,1 +1,4 @@
-<p>drag-drop works!</p>
+
+<div cdkDropList (cdkDropListDropped)="onDrop($event)">
+    <div *ngFor="let item of items" cdkDrag>{{ item }}</div>
+  </div>
